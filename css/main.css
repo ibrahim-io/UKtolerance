@@ -3,9 +3,13 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   
 
- 
+
+div.jumbotron {
+    background-color: url(https://christianitymalaysia.com/wp/wp-content/uploads/2014/09/ocean-waves-wallpaper-tumblr.jpg);
+}
+
+
 h1.Header {
 	font-size: 100px;
 }
@@ -13,20 +17,3 @@ h1.Header {
 a.twitter-timeline {
 	height: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
