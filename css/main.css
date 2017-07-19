@@ -6,7 +6,7 @@
 
 
 div.jumbotron {
-    background-color: url(https://christianitymalaysia.com/wp/wp-content/uploads/2014/09/ocean-waves-wallpaper-tumblr.jpg);
+    background-image: url(https://christianitymalaysia.com/wp/wp-content/uploads/2014/09/ocean-waves-wallpaper-tumblr.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
 }
