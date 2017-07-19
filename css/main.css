@@ -12,6 +12,11 @@ h1.Header {
 	font-size: 100px;
 }
 
+a.twitter-timeline {
+	left: 1px;
+	width: 50%;
+}
+
 
 
 
