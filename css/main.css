@@ -19,3 +19,7 @@ h1.Header {
 a.twitter-timeline {
 	height: 100%;
 }
+
+hr {
+	color: grey;
+}
