@@ -5,21 +5,12 @@
    ========================================================================== */
 
 
-div.jumbotron {
-    background-image: url(https://christianitymalaysia.com/wp/wp-content/uploads/2014/09/ocean-waves-wallpaper-tumblr.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-}
-
-
 h1.Header {
 	font-size: 100px;
 }
 
-a.twitter-timeline {
-	height: 100%;
-}
+
 
 hr {
-	border: solid 2px white;
+	border: solid 1px white;
 }
