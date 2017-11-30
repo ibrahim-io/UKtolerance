@@ -40,15 +40,16 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<ul class="nav nav-tabs">
-					  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-					  <li><a data-toggle="tab" href="#menu1">Online Options</a></li>
-					  <li><a data-toggle="tab" href="#menu2">Menu</a></li>
-					  <li><a data-toggle="tab" href="#menu3">About Us</a></li>
-					</ul>
+					<div class="tab">
+					  <button class="tablinks" onclick="openCity(event, 'London')">Home</button>
+					  <button class="tablinks" onclick="openCity(event, 'Paris')">Online Options</button>
+					  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Menu</button>
+					  <button class="tablinks" onclick="openCity(event, 'Edinburgh')">About Us</button>
+					</div>
+
 
 					<div class="tab-content">
-					  <div id="home" class="tab-pane fade in active">
+					  <div id="London" class="tabcontent">
 						<hr>
 						<h1>Welcome to Western Fried Chicken</h1>
 						<hr>
@@ -57,7 +58,7 @@
 						<h4>Our chickens are made carefully by our employees. Our main source of happiness at Western Fried Chicken is to make our customers happy.</h4>
 						
 					  </div>
-					  <div id="menu1" class="tab-pane fade">
+					  <div id="Paris" class="tabcontent">
 						<hr>
 						<h1>Western's Online</h1>
 						<hr>
@@ -65,14 +66,14 @@
 						 an online ordering service in the near future. To see our selection in foods and drinks go to the menu tab shown above.</h4>
 						
 					  </div>
-					  <div id="menu2" class="tab-pane fade">
+					  <div id="Tokyo" class="tabcontent">
 						<hr>
 						<h1>Western's Menu.</h1>
 						<hr>
 						<img src='https://b.zmtcdn.com/data/menus/527/6112527/1cf1b37316c5ed6c252ff1293a84727e.jpg?output-format=webp' width="900px" height="1350px">
 						
 					  </div>
-					  <div id="menu3" class="tab-pane fade">
+					  <div id="Edinburgh" class="tabcontent">
 						<hr>
 						<h1>Where we are located</h1>
 						<hr>
@@ -113,5 +114,23 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+		<script>
+			function openCity(evt, cityName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+		</script>
     </body>
 </html>
